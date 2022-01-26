@@ -39,10 +39,3 @@ def get_output():
 if __name__ =='__main__':
  #   app.debug = True
     app.run(debug= False)
-
-
-# In[ ]:
-
-
-
-
