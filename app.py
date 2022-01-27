@@ -11,7 +11,7 @@ from tensorflow.keras.preprocessing import image
 import numpy as np
 
 app = Flask(__name__)
-dic = {0 : 'Bald Eagle', 1 : 'Snowy Owl'}
+dic = {0 : 'NORMAL', 1 : 'PNEUMONIA'}
 model = load_model('classification_model.h5')
 model.make_predict_function()
 

@@ -12,8 +12,8 @@
 <body>
 <div class="jumbotron jumbotron-fluid">
 <div class="container">
-  <h1 class="display-4" style="text-align:center"><strong>Bird Classfication Application</strong></h1>
-  <p class="lead" style="text-align:center">This is a Deep Learning web application to classify between <i><strong>Bald Eagle</strong></i> and <i><strong>Snowy Owl</strong></i>.</p>
+  <h2 class="display-4" style="text-align:center"><strong>DoctorXRay Classfication Dashboard</strong></h2>
+  <p class="lead" style="text-align:center">Welcome to DoctorXray classification dashboard which helps doctor and healthworker to distingush between a <strong>NORMAl XRay</strong> and <strong>PNEUMONIA Detected Xray</strong>.</p>
   <br><br>
   <form class="form-horizontal" action="/submit" method="post" enctype="multipart/form-data">
 
@@ -39,7 +39,7 @@
   	{% if prediction %}
 	<p class="lead" style="text-align:center">
 		<img src="{{img_path}}" height="400px" width="400px" class="center">
-		<h4> <center>The predicted bird is   : <i> {{prediction}} </i></center></h4>
+		<h4> <center>The Xray is   : <i> {{prediction}} </i></center></h4>
 	</p>
 	{% endif %}
 </div>
