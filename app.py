@@ -19,7 +19,7 @@ def predict_label(img_path):
     i = image.load_img(img_path, target_size=(100,100))
     i = image.img_to_array(i)/255.0
     i = np.expand_dims(i, axis=0)
-    p = model.predict_classes(i)
+    p = model.predict(i).astype("int32")
     return dic[p[0][0]]
 
 # routes
